@@ -1,0 +1,8 @@
+name = "Marginalia Search Website"
+license = "MIT"
+description = "Marginalia Search Website Theme"
+min_version = "0"
+
+[author]
+  name = "Viktor Lofgren"
+  homepage = "https://www.marginalia.nu/"
