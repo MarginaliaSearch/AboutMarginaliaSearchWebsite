@@ -17,6 +17,8 @@ The old UI will be available at <a class="text-liteblue dark:text-blue-200" href
 
 For the API, both <span class="dark:text-red-100 text-red-800"> `api.marginalia.nu` </span> and <span class="dark:text-red-100 text-red-800"> `api.marginalia-search.com` </span> will work.
 
+The user-agent will remain the same as before, that is <span class="dark:text-red-100 text-red-800"> `search.marginalia.nu` </span>.  Changing this would only break robots.txt rules, and since the old the domain will redirect to the new in perpetuity, there is no reason to change this.
+
 ## Why?
 
 The search engine started as a small hobby project, and as such made sense to keep on a subdomain of my blog.  In the years since, it has grown a bit too much of its own thing to quite continue living like that.  Thus, it will move to <span class="dark:text-red-100 text-red-800"> `marginalia-search.com` </span> and get its own visual identity.
