@@ -19,7 +19,7 @@ The entire work is funded by my own savings, supplemented by grants and public d
 <div class="text-xs text-gray-400">Preferred</div>
 </a>
 
-<a href="https://www.buymeacoffee.com/marginalia.nu" class="flex flex-row sm:flex-col place-items-baseline gap-1 text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600">
+<a href="https://github.com/sponsors/MarginaliaSearch" class="flex flex-row sm:flex-col place-items-baseline gap-1 text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600">
 <div><i class="fa-brands fa-github  mr-1"></i> Github Sponsors</div>
 <div class="grow sm:hidden"></div>
 <div class="text-xs text-gray-400">Preferred</div>
