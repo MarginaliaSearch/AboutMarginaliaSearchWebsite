@@ -12,23 +12,23 @@ Marginalia Search is an independent open source Internet search engine operating
 
 <div class="flex px-32 sm:px-0 gap-4 flex-col sm:flex-row my-4 sm:mx-auto">
 
-<a href="https://www.marginalia.nu/tags/search-engine/" class="text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
+<a href="https://www.marginalia.nu/tags/search-engine/" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
 <i class="fas fa-blog  mr-1"></i> Devlog
 </a>
 
-<a href="/article/redesign" class="text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
+<a href="/article/redesign" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
 <i class="fas fa-pencil  mr-1"></i> Redesign
 </a>
 
-<a href="https://git.marginalia.nu/" class="text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
+<a href="https://git.marginalia.nu/" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
 <i class="fas fa-cog  mr-1"></i> Sources
 </a>
 
-<a href="/article/api" class="text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
+<a href="/article/api" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
 <i class="fas fa-server  mr-1"></i> API
 </a>
 
-<a href="/article/supporting" class="text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
+<a href="/article/supporting" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
 <i class="fas fa-dollar  mr-1"></i> Sponsor
 </a>
 </div>
