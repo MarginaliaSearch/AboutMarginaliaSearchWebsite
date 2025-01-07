@@ -31,7 +31,13 @@ Marginalia Search is an independent open source Internet search engine operating
 <a href="/article/supporting" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
 <i class="fas fa-dollar  mr-1"></i> Sponsor
 </a>
+
+<a href="/article/crawler" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
+<i class="fas fa-spider  mr-1"></i> Crawler
+</a>
+
 </div>
+
 
 <div class="border dark:border-gray-600 rounded bg-white dark:bg-gray-800 flex flex-col overflow-hidden space-y-2 p-2 sm:p-4 text-sm text-gray-800 dark:text-gray-100 font-justify text-justify hyphens-auto">
 
