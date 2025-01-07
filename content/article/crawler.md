@@ -3,7 +3,7 @@ title: 'Crawler Information'
 published: 2025-01-07
 ---
 
-<div class="grid grid-cols-2 grid-cols-2 gap-2 mx-0 sm:mx-2 sm:border rounded p-2 sm:dark:border-gray-400">
+<div class="grid grid-cols-2 grid-cols-2 sm:gap-2 mx-0 sm:mx-2 sm:border rounded sm:p-2 sm:dark:border-gray-400">
     <div>
         <h3 class="text-sm font-medium text-gray-500 dark:text-gray-300">IP Address Range</h3>
         <p class="text-lg font-mono">193.183.0.162-174</p>
