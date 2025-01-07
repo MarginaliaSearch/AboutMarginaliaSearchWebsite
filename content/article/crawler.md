@@ -3,22 +3,22 @@ title: 'Crawler Information'
 published: 2025-01-07
 ---
 
-<div class="grid grid-cols-2 grid-cols-2 sm:gap-2 mx-0 sm:mx-2 sm:border rounded sm:p-2 sm:dark:border-gray-400">
+<div class="grid grid-cols-2 grid-cols-2 sm:gap-2 mx-0 sm:mx-2 border rounded p-2 dark:border-gray-400 overflow-auto">
     <div>
-        <h3 class="text-sm font-medium text-gray-500 dark:text-gray-300">IP Address Range</h3>
-        <p class="text-lg font-mono">193.183.0.162-174</p>
+        <h3 class="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-300">IP Address Range</h3>
+        <p class="text-sm sm:text-lg font-mono">193.183.0.162-174</p>
     </div>
     <div>
-        <h3 class="text-sm font-medium text-gray-500 dark:text-gray-300">User Agent</h3>
-        <p class="text-lg font-mono">search.marginalia.nu</p>
+        <h3 class="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-300">User Agent</h3>
+        <p class="text-sm sm:text-lg font-mono">search.marginalia.nu</p>
     </div>
     <div>
-        <h3 class="text-sm font-medium text-gray-500 dark:text-gray-300">Crawl Interval</h3>
-        <p class="text-lg font-mono">8-10 weeks<sup>1</sup></p>
+        <h3 class="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-300">Crawl Interval</h3>
+        <p class="text-sm sm:text-lg font-mono">8-10 weeks<sup>1</sup></p>
     </div>
     <div>
-        <h3 class="text-sm font-medium text-gray-500 dark:text-gray-300">robots.txt identifier</h3>
-        <p class="text-lg font-mono">search.marginalia.nu</p>
+        <h3 class="text-sx sm:text-sm font-medium text-gray-500 dark:text-gray-300">robots.txt identifier</h3>
+        <p class="text-sm sm:text-lg font-mono">search.marginalia.nu</p>
     </div>
 </div>
 
