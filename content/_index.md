@@ -9,30 +9,36 @@ Marginalia Search is an independent open source Internet search engine operating
 </div>
 </div> <!-- hack -->
 
-<div class=" px-32 sm:px-0 gap-4 grid grid-cols-3 col sm:flex sm:flex-row my-4 sm:mx-auto">
+<div class=" px-32 sm:px-0 gap-4 grid grid-cols-3 sm:grid-cols-6 col my-4 sm:mx-auto">
 
 <a href="https://www.marginalia.nu/tags/search-engine/" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-blog text-3xl sm:text-sm mr-1 block text-center"></i>Devlog
+<i class="fas fa-blog text-3xl sm:text-sm mr-1 block text-center sm:mb-1 mb-2"></i>
+<div>Devlog</div>
 </a>
 
 <a href="/article/redesign" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-pencil text-3xl sm:text-sm mr-1 block text-center"></i> Redesign
+<i class="fas fa-pencil text-3xl sm:text-sm mr-1 block text-center sm:mb-1 mb-2"></i>
+<div>Redesign</div>
 </a>
 
 <a href="https://git.marginalia.nu/" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-cog text-3xl sm:text-sm mr-1 block text-center"></i> Sources
+<i class="fas fa-cog text-3xl sm:text-sm mr-1 block text-center sm:mb-1 mb-2"></i>
+<div>Sources</div>
 </a>
 
 <a href="/article/api" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-server text-3xl sm:text-sm mr-1 block text-center"></i> API
+<i class="fas fa-server text-3xl sm:text-sm mr-1 block text-center sm:mb-1 mb-2"></i>
+<div>API</div>
 </a>
 
 <a href="/article/supporting" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-dollar text-3xl sm:text-sm mr-1 block text-center"></i> Sponsor
+<i class="fas fa-dollar text-3xl sm:text-sm mr-1 block text-center sm:mb-1 mb-2"></i>
+<div>Sponsor</div>
 </a>
 
 <a href="/article/crawler" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-spider text-3xl sm:text-sm mr-1 block text-center"></i> Crawler
+<i class="fas fa-spider text-3xl sm:text-sm mr-1 block text-center sm:mb-1 mb-2"></i>
+<div>Crawler</div>
 </a>
 
 </div>
