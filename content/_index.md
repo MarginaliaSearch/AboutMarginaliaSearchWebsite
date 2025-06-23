@@ -9,31 +9,30 @@ Marginalia Search is an independent open source Internet search engine operating
 </div>
 </div> <!-- hack -->
 
-
-<div class="flex px-32 sm:px-0 gap-4 flex-col sm:flex-row my-4 sm:mx-auto">
+<div class=" px-32 sm:px-0 gap-4 grid grid-cols-3 col sm:flex sm:flex-row my-4 sm:mx-auto">
 
 <a href="https://www.marginalia.nu/tags/search-engine/" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-blog  mr-1"></i> Devlog
+<i class="fas fa-blog text-3xl sm:text-sm mr-1 block text-center"></i>Devlog
 </a>
 
 <a href="/article/redesign" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-pencil  mr-1"></i> Redesign
+<i class="fas fa-pencil text-3xl sm:text-sm mr-1 block text-center"></i> Redesign
 </a>
 
 <a href="https://git.marginalia.nu/" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-cog  mr-1"></i> Sources
+<i class="fas fa-cog text-3xl sm:text-sm mr-1 block text-center"></i> Sources
 </a>
 
 <a href="/article/api" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-server  mr-1"></i> API
+<i class="fas fa-server text-3xl sm:text-sm mr-1 block text-center"></i> API
 </a>
 
 <a href="/article/supporting" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-dollar  mr-1"></i> Sponsor
+<i class="fas fa-dollar text-3xl sm:text-sm mr-1 block text-center"></i> Sponsor
 </a>
 
 <a href="/article/crawler" class="text-center text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600 bg-white dark:bg-gray-800">
-<i class="fas fa-spider  mr-1"></i> Crawler
+<i class="fas fa-spider text-3xl sm:text-sm mr-1 block text-center"></i> Crawler
 </a>
 
 </div>
