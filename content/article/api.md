@@ -16,15 +16,39 @@ The API is simple enough to be self-explanatory. Examples:
 ```
 https://api.marginalia.nu/public/
 https://api.marginalia.nu/public/search/json+api
-https://api.marginalia.nu/public/search/json+api?index=0
-https://api.marginalia.nu/public/search/json+api?index=0&count=10
+https://api.marginalia.nu/public/search/json+api?count=10
 ```
 
 </div>
 
-The 'index' parameter selects the search index, corresponding to the drop down next to the search field in the main GUI. 
-
 For experimentation, the key "public" is available, as used in the examples on this page. This key has a shared rate limit across all consumers. When this rate limit is hit a HTTP status 503 is returned. 
+
+
+
+### Query Parameters
+
+<div class="border rounded p-2 m-1 dark:text-slate-300 text-slate-800">
+
+<table>
+<tr>
+<td class="font-bold">Param</td>
+<td class="font-bold">Value</td>
+<td class="font-bold">Description</td>
+</tr>
+<tr>
+<td>count</td><td>int</td><td>Number of Results</td>
+</tr>
+<tr>
+<td>dc</td><td>int</td><td>Max number of results per domain</td>
+</tr>
+<tr> <td class="align-top">nsfw</td><td>0</td><td>no filter</tr></tr>
+<tr> <td class="align-top">nsfw</td><td>1</td><td>(experimental) reduce extreme results</tr></tr>
+<tr>
+<td>index</td><td>int</td><td>deprecated</td>
+</tr>
+</table>
+
+</div>
 
 ## Key and license
 
@@ -35,7 +59,7 @@ By default the data is provided under the CC-BY-NC-SA 4.0 license. Other licensi
 * [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # Sample code in python 3
-<div class="text-xs overflow-auto">
+<div class="text-xs overflow-auto border rounded m-1 p-1">
 
 ```python
 import requests
