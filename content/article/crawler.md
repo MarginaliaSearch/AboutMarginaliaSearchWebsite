@@ -6,7 +6,7 @@ published: 2025-01-07
 <div class="grid grid-cols-2 grid-cols-2 sm:gap-2 mx-0 sm:mx-2 border rounded p-2 dark:border-gray-400 overflow-auto">
     <div>
         <h3 class="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-300">IP Address Range</h3>
-        <p class="text-sm sm:text-lg font-mono">193.183.0.162-174</p>
+        <p class="text-sm sm:text-lg font-mono">193.183.0.162-193.183.0.174</p>
     </div>
     <div>
         <h3 class="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-300">User Agent</h3>
@@ -23,6 +23,8 @@ published: 2025-01-07
 </div>
 
 Email <a href="mailto:contact@marginalia-search.com">contact@marginalia-search.com</a> in case the crawler is misbehaving, or for other related complaints or inquiries.  The goal is to run an above-board, well behaving search engine crawler so any complaints are taken seriously.
+
+A full list of IPs is indicated in <https://search.marginalia.nu/crawler-ips.txt>.
 
 If you wish to be indexed, follow the instructions in [this github repository](https://github.com/MarginaliaSearch/submit-site-to-marginalia-search).
 
