@@ -4,7 +4,7 @@ date = 2025-12-08
 section = "marginalia-search"
 aliases = ["/projects/edge/api.gmi"]
 draft = false
-categories = ["docs", "outdated"]
+categories = ["docs"]
 +++
 
 ## New API
@@ -15,11 +15,11 @@ For all requests, pass the API-Key using the API-key header.  If you want to dev
 you can use the API key `public`.  Note that it is blocked from creating custom filters, and very often hits a rate limit.
 
 ### Obtaining a Key
-Please send an email to contact@marginalia-search.com if you want your own key with a separate rate limit. The search engine has seen quite a lot of problems with bot abuse, making this registration step a sad necessity. 
+Please send an email to contact@marginalia-search.com if you want a non-commercial key with a separate rate limit for free.  The email step is necessary to prevent abuse.  If you want to skip the line and/or help support the search engine, you can also [buy a non-commercial API key](https://polar.sh/marginalia-search/products/227939be-61e6-4fab-bb81-10b7171b0cc5).  Though this is **optional**, and will always remain optional!
 
-By default the data is provided under the CC-BY-NC-SA 4.0 license. Other licensing and terms are negotiable.
+Non-commercial access provided under the [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
-* [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+Keys with no non-commercial restrictions or attribution requirements can be [bought here](https://polar.sh/marginalia-search).
 
 ## Getting Started
 
@@ -45,10 +45,13 @@ These query parameters are understood
 <td class="font-bold">Description</td>
 </tr>
 <tr>
-<td>count</td><td>int</td><td>Number of Results</td>
+<td>count</td><td>1-100</td><td>Number of Results</td>
 </tr>
 <tr>
-<td>dc</td><td>int</td><td>Max number of results per domain</td>
+<td>timeout</td><td>50-250</td><td>Query execution timeout (ms)</td>
+</tr>
+<tr>
+<td>dc</td><td>1-100</td><td>Max number of results per domain</td>
 </tr>
 <tr> <td class="align-top">nsfw</td><td>0</td><td>no filter</tr></tr>
 <tr> <td class="align-top">nsfw</td><td>1</td><td>(experimental) reduce extreme results</tr></tr>
