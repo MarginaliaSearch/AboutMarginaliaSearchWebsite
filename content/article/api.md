@@ -53,6 +53,9 @@ These query parameters are understood
 <tr>
 <td>dc</td><td>1-100</td><td>Max number of results per domain</td>
 </tr>
+<tr>
+<td>page</td><td>int</td><td>Select results page (1-indexed)</td>
+</tr>
 <tr> <td class="align-top">nsfw</td><td>0</td><td>no filter</tr></tr>
 <tr> <td class="align-top">nsfw</td><td>1</td><td>(experimental) reduce extreme results</tr></tr>
 <td>filter</td><td>string</td><td>Use custom filter</td>
@@ -210,6 +213,9 @@ For experimentation, the key "public" is available, as used in the examples on t
 </tr>
 <tr>
 <td>dc</td><td>int</td><td>Max number of results per domain</td>
+</tr>
+<tr>
+<td>page</td><td>int</td><td>Select results page (1-indexed)</td>
 </tr>
 <tr> <td class="align-top">nsfw</td><td>0</td><td>no filter</tr></tr>
 <tr> <td class="align-top">nsfw</td><td>1</td><td>(experimental) reduce extreme results</tr></tr>
