@@ -12,7 +12,7 @@ The entire work is funded by my own savings, supplemented by grants and public d
 
 
 <div class="flex px-16 sm:px-0 gap-4 flex-col sm:flex-row my-4 justify-center">
-<a href="https://polar.sh/marginalia-search" class="flex flex-row sm:flex-col place-items-baseline gap-1 text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600">
+<a href="https://buy.polar.sh/polar_cl_CNZfgBBTQAWNm3SIl6GYBx2rnbXWQYJBF9tjs3YSrz2" class="flex flex-row sm:flex-col place-items-baseline gap-1 text-margeblue dark:text-blue-200 border p-2 rounded dark:border-gray-600 active:bg-gray-200 dark:active:bg-gray-600">
 
 <div><i class="fas fa-o mr-1"></i> Polar.sh</div>
 <div class="grow sm:hidden"></div>

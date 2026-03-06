@@ -15,11 +15,11 @@ For all requests, pass the API-Key using the API-key header.  If you want to dev
 you can use the API key `public`.  Note that it is blocked from creating custom filters, and very often hits a rate limit.
 
 ### Obtaining a Key
-Please send an email to contact@marginalia-search.com if you want a non-commercial key with a separate rate limit for free.  The email step is necessary to prevent abuse.  If you want to skip the line and/or help support the search engine, you can also [buy a non-commercial API key](https://polar.sh/marginalia-search/products/227939be-61e6-4fab-bb81-10b7171b0cc5).  Though this is **optional**, and will always remain optional!
+Please send an email to contact@marginalia-search.com if you want a non-commercial key with a separate rate limit for free.  The email step is necessary to prevent abuse.  If you want to skip the line and/or help support the search engine, you can also [buy a non-commercial API key](https://buy.polar.sh/polar_cl_B7026PKyFKrH5f0F1O6tcN6foD0ivufh1wX6l4fUeVV).  Though this is **optional**, and will always remain optional!
 
 Non-commercial access provided under the [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
-Keys with no non-commercial restrictions or attribution requirements can be [bought here](https://polar.sh/marginalia-search).
+Keys with no non-commercial restrictions or attribution requirements can be [bought here](https://buy.polar.sh/polar_cl_hKnbSGWkflTozpXajwIu2ycB2fYmLM8jDxsuh06Kvmt).
 
 ## Getting Started
 
