@@ -9,21 +9,35 @@ categories = ["docs"]
 
 ## New API
 
-The updated API for the search engine is available through <span class="text-red-900 dark:text-red-100">`api2.marginalia-search.com`</span>.
+The updated API is available through <span class="text-red-900 dark:text-red-100">`api2.marginalia-search.com`</span>.
 
-For all requests, pass the API-Key using the API-key header.  If you want to develop an integration, but do not yet have an API key,
-you can use the API key `public`.  Note that it is blocked from creating custom filters, and very often hits a rate limit.
+Pass the API key in the `API-Key` header on every request.  If you want to develop an integration but do not yet have a key, you can use the key `public`.  Note that this key cannot create custom filters, and often hits a rate limit.
 
-### Obtaining a Key
-Please send an email to contact@marginalia-search.com if you want a non-commercial key with a separate rate limit for free.  The email step is necessary to prevent abuse.  If you want to skip the line and/or help support the search engine, you can also [buy a non-commercial API key](https://buy.polar.sh/polar_cl_B7026PKyFKrH5f0F1O6tcN6foD0ivufh1wX6l4fUeVV).  Though this is **optional**, and will always remain optional!
+### Obtaining a key
 
-Non-commercial access provided under the [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mx-0 sm:mx-2 my-2">
+    <div class="border rounded p-3 dark:border-gray-400 flex flex-col space-y-2">
+        <h4 class="text-sm font-bold text-margeblue dark:text-slate-200">Free non-commercial</h4>
+        <p class="grow">Email <a class="underline text-liteblue dark:text-blue-200" href="mailto:contact@marginalia-search.com">contact@marginalia-search.com</a>.  The email step is necessary to prevent mass signup abuse.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400">Provided under <a class="underline text-liteblue dark:text-blue-200" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>.</p>
+    </div>
+    <div class="border rounded p-3 dark:border-gray-400 flex flex-col space-y-2">
+        <h4 class="text-sm font-bold text-margeblue dark:text-slate-200">Paid non-commercial</h4>
+        <p class="grow"><a class="underline text-liteblue dark:text-blue-200" href="https://buy.polar.sh/polar_cl_B7026PKyFKrH5f0F1O6tcN6foD0ivufh1wX6l4fUeVV">Buy a non-commercial key</a> to skip the line and support the search engine with a one-time payment.  Optional, and will always remain optional.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400">Provided under <a class="underline text-liteblue dark:text-blue-200" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>.</p>
+    </div>
+    <div class="border rounded p-3 dark:border-gray-400 flex flex-col space-y-2">
+        <h4 class="text-sm font-bold text-margeblue dark:text-slate-200">Commercial</h4>
+        <p class="grow"><a class="underline text-liteblue dark:text-blue-200" href="https://buy.polar.sh/polar_cl_hKnbSGWkflTozpXajwIu2ycB2fYmLM8jDxsuh06Kvmt">Buy a metered commercial key</a> with no commercial usage restriction or attribution requirement.</p> 
+        <p class="text-xs text-gray-600 dark:text-gray-400">Manage your subscription at <a class="underline text-liteblue dark:text-blue-200" href="https://polar.sh/marginalia-search/portal">polar.sh/marginalia-search/portal</a>.</p>
+    </div>
+</div>
 
-Keys with no non-commercial restrictions or attribution requirements can be [bought here](https://buy.polar.sh/polar_cl_hKnbSGWkflTozpXajwIu2ycB2fYmLM8jDxsuh06Kvmt).
+Other terms are negotiable, email <a class="underline text-liteblue dark:text-blue-200" href="mailto:contact@marginalia-search.com">contact@marginalia-search.com</a>.
 
-## Getting Started
+### Getting started
 
-To make a test request using the public sample key, which is very often overloaded, you can for example call 
+A test request using the `public` key:
 
 <div class="overflow-auto text-xs text-gray-700 dark:text-gray-200 p-2">
 
@@ -33,63 +47,55 @@ $ curl -H"API-Key: ${API_KEY}" -XGET https://api2.marginalia-search.com/search?q
 
 </div>
 
-
-These query parameters are understood
+The following query parameters are understood.
 
 <div class="border rounded p-2 m-1 dark:text-slate-300 text-slate-800">
-
 <table>
 <tr>
 <td class="font-bold">Param</td>
 <td class="font-bold">Value</td>
 <td class="font-bold">Description</td>
 </tr>
-<tr>
-<td>count</td><td>1-100</td><td>Number of Results</td>
-</tr>
-<tr>
-<td>timeout</td><td>50-250</td><td>Query execution timeout (ms)</td>
-</tr>
-<tr>
-<td>dc</td><td>1-100</td><td>Max number of results per domain</td>
-</tr>
-<tr>
-<td>page</td><td>int</td><td>Select results page (1-indexed)</td>
-</tr>
-<tr> <td class="align-top">nsfw</td><td>0</td><td>no filter</tr></tr>
-<tr> <td class="align-top">nsfw</td><td>1</td><td>(experimental) reduce extreme results</tr></tr>
-<td>filter</td><td>string</td><td>Use custom filter</td>
+<tr><td>count</td><td>1-100</td><td>Number of results</td></tr>
+<tr><td>timeout</td><td>50-250</td><td>Query execution timeout (ms)</td></tr>
+<tr><td>dc</td><td>1-100</td><td>Max number of results per domain</td></tr>
+<tr><td>page</td><td>int</td><td>Select results page (1-indexed)</td></tr>
+<tr><td>nsfw</td><td>0</td><td>No filter</td></tr>
+<tr><td>nsfw</td><td>1</td><td>(experimental) reduce extreme results</td></tr>
+<tr><td>filter</td><td>string</td><td>Use custom filter</td></tr>
 </table>
-
 </div>
 
 ### Sample code in Python 3
 
+<div class="overflow-auto text-xs text-gray-700 dark:text-gray-200 p-2">
+
 ```python
 import requests
 
-url = "https://api2.marginalia-search.com/search?query={query}";
+url = "https://api2.marginalia-search.com/search?query={query}"
 
-rsp = requests.get(url.format(query="linear b"), headers={'API-Key': 'public'});
+rsp = requests.get(url.format(query="linear b"), headers={'API-Key': 'public'})
 
 if rsp.ok:
-  data = rsp.json()
-  print ("Query: ", data['query'])
-  print ("License: ", data['license'])
-  print ("")
-  for result in data['results']:
-      print (result['url'])
-      print ("\t" + result['title'])
-      print ("\t" + result['description'])
-      print ("")
+    data = rsp.json()
+    print("Query: ", data['query'])
+    print("License: ", data['license'])
+    print("")
+    for result in data['results']:
+        print(result['url'])
+        print("\t" + result['title'])
+        print("\t" + result['description'])
+        print("")
 else:
-    print ("Bad Status " + str(rsp.status_code))
+    print("Bad Status " + str(rsp.status_code))
 ```
+
+</div>
 
 ### Filters
 
-It is possible to set up custom filters for your API key.  This is not allowed on the `public` key,
-using these API endpoints.
+You can set up custom filters for your API key.  This is not allowed on the `public` key.
 
 <div class="border rounded p-2 m-1 dark:text-slate-300 text-slate-800">
 <table>
@@ -98,35 +104,18 @@ using these API endpoints.
 <td class="font-bold">Endpoint</td>
 <td class="font-bold">Description</td>
 </tr>
-<tr>
-<td>GET</td>
-<td class="font-mono px-1">/filter</td>
-<td>List configured filters</td>
-</tr>
-<tr>
-<td>POST</td>
-<td class="font-mono px-1">/filter/NAME</td>
-<td>Create a new filter, NAME.</td>
-</tr>
-<tr>
-<td>GET</td>
-<td class="font-mono px-1">/filter/NAME</td>
-<td>Retrieve filter definition for NAME</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td class="font-mono px-1">/filter/NAME</td>
-<td>Delete custom filter NAME</td>
-</tr>
+<tr><td>GET</td><td class="font-mono px-1">/filter</td><td>List configured filters</td></tr>
+<tr><td>POST</td><td class="font-mono px-1">/filter/NAME</td><td>Create a new filter NAME</td></tr>
+<tr><td>GET</td><td class="font-mono px-1">/filter/NAME</td><td>Retrieve filter definition for NAME</td></tr>
+<tr><td>DELETE</td><td class="font-mono px-1">/filter/NAME</td><td>Delete custom filter NAME</td></tr>
 </table>
 </div>
 
-
-Custom filters are defined using an XML format.
-These XML files can be either hand rolled, or generated
-by the <a class="underline" href="https://marginalia-search.com/filters">filter editor</a>.
+Custom filters are defined in XML.  These can be hand rolled, or generated by the <a class="underline text-liteblue dark:text-blue-200" href="https://marginalia-search.com/filters">filter editor</a>.
 
 ### XML example
+
+<div class="overflow-auto text-xs text-gray-700 dark:text-gray-200 p-2">
 
 ```xml
 <?xml version="1.0"?>
@@ -168,7 +157,7 @@ by the <a class="underline" href="https://marginalia-search.com/filters">filter 
 
     <!-- estimated publication year (janky) -->
     <limit param="year" type="lt" value="1996" />
-    <!-- a measure of how much javascript is on the page, 
+    <!-- a measure of how much javascript is on the page,
          legacy marginalia search ranking metric -->
     <limit param="quality" type="eq" value="5" />
     <!-- how many documents are on the domain -->
@@ -178,12 +167,13 @@ by the <a class="underline" href="https://marginalia-search.com/filters">filter 
 </filter>
 ```
 
+</div>
 
-## Old API (DEPRECATED)
+## Old API (deprecated)
 
-A deprecated API for the search engine is available through <span class="text-red-900 dark:text-red-100">`api.marginalia.nu`</span>, or <span class="text-red-900 dark:text-red-100">`api.marginalia-search.com`</span>.  Both endpoints are equivalent and will work as long as the project does, though will not receive new functionality.
+The deprecated API is available through <span class="text-red-900 dark:text-red-100">`api.marginalia.nu`</span> or <span class="text-red-900 dark:text-red-100">`api.marginalia-search.com`</span>.  Both endpoints are equivalent and will work as long as the project does, but will not receive new functionality.
 
-The API is simple enough to be self-explanatory. Examples:
+Examples:
 
 <div class="overflow-auto text-xs text-gray-700 dark:text-gray-200 p-2">
 
@@ -195,67 +185,57 @@ https://api.marginalia.nu/public/search/json+api?count=10
 
 </div>
 
-For experimentation, the key "public" is available, as used in the examples on this page. This key has a shared rate limit across all consumers. When this rate limit is hit a HTTP status 503 is returned. 
+The key `public` is available for experimentation, as used in the examples above.  This key has a shared rate limit across all consumers; when the limit is hit, HTTP 503 is returned.
 
-
-### Query Parameters (DEPRECATED)
+### Query parameters (deprecated)
 
 <div class="border rounded p-2 m-1 dark:text-slate-300 text-slate-800">
-
 <table>
 <tr>
 <td class="font-bold">Param</td>
 <td class="font-bold">Value</td>
 <td class="font-bold">Description</td>
 </tr>
-<tr>
-<td>count</td><td>int</td><td>Number of Results</td>
-</tr>
-<tr>
-<td>dc</td><td>int</td><td>Max number of results per domain</td>
-</tr>
-<tr>
-<td>page</td><td>int</td><td>Select results page (1-indexed)</td>
-</tr>
-<tr> <td class="align-top">nsfw</td><td>0</td><td>no filter</tr></tr>
-<tr> <td class="align-top">nsfw</td><td>1</td><td>(experimental) reduce extreme results</tr></tr>
-<tr>
-<td>index</td><td>int</td><td>deprecated</td>
-</tr>
+<tr><td>count</td><td>int</td><td>Number of results</td></tr>
+<tr><td>dc</td><td>int</td><td>Max number of results per domain</td></tr>
+<tr><td>page</td><td>int</td><td>Select results page (1-indexed)</td></tr>
+<tr><td>nsfw</td><td>0</td><td>No filter</td></tr>
+<tr><td>nsfw</td><td>1</td><td>(experimental) reduce extreme results</td></tr>
+<tr><td>index</td><td>int</td><td>deprecated</td></tr>
 </table>
-
 </div>
 
-# Sample code in python 3 (DEPRECATED)
-<div class="text-xs overflow-auto border rounded m-1 p-1">
+### Sample code in Python 3 (deprecated)
+
+<div class="overflow-auto text-xs text-gray-700 dark:text-gray-200 p-2">
 
 ```python
 import requests
 
-url = "https://api.marginalia.nu/{key}/search/{query}";
+url = "https://api.marginalia.nu/{key}/search/{query}"
 
-rsp = requests.get(url.format(key='public', query="linear b"));
+rsp = requests.get(url.format(key='public', query="linear b"))
 
 if rsp.ok:
-  data = rsp.json()
-  print ("Query: ", data['query'])
-  print ("License: ", data['license'])
-  print ("")
-  for result in data['results']:
-      print (result['url'])
-      print ("\t" + result['title'])
-      print ("\t" + result['description'])
-      print ("")
+    data = rsp.json()
+    print("Query: ", data['query'])
+    print("License: ", data['license'])
+    print("")
+    for result in data['results']:
+        print(result['url'])
+        print("\t" + result['title'])
+        print("\t" + result['description'])
+        print("")
 else:
-    print ("Bad Status " + str(rsp.status_code))
+    print("Bad Status " + str(rsp.status_code))
 ```
 
 </div>
 
-# Something missing?
+## Something missing?
 
-Please let me know if there are features you would like added to the API.
+Let me know if there are features you would like added to the API.
 
-# See also
+## See also
 
 * [Data sets from the search engine](https://downloads.marginalia.nu/)
